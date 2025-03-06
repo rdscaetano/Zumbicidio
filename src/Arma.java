@@ -17,7 +17,7 @@ class Cura extends Item {
     }
 
     public void usar(Personagem jogador) {
-        //recupera 1 de vida
+        jogador.recuperarVida(1);
         System.out.println("O jogador usou uma atadura e recuperou 1 ponto de vida!");
     }
 }

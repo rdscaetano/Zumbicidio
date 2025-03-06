@@ -13,7 +13,7 @@ public abstract class Zumbi {
     public abstract void mover(); // Método abstrato para movimentação específica
 
     public void atacar(Personagem jogador) {
-        //1 de dano
+        jogador.receberDano(2);
     }
 
     public void receberDano(int dano) {
@@ -88,6 +88,6 @@ class ZumbiGigante extends Zumbi {
 
     @Override
     public void atacar(Personagem jogador) {
-        //2 de dano
+        jogador.receberDano(2);
     }
 }

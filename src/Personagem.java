@@ -18,7 +18,8 @@ public class Personagem {
     }
 
     public void atacar(Zumbi zumbi, Arma arma) {
-
+        zumbi.receberDano(arma.getDano());
+        System.out.println("O zumbi recebeu " + arma.getDano() + " de dano!");
     }
 
     public void receberDano(int dano) {
